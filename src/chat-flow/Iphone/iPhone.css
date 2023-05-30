@@ -1,0 +1,256 @@
+.device,
+.device::before,
+.device::after,
+.device *,
+.device *::before,
+.device *::after {
+  box-sizing: border-box;
+  display: block;
+}
+
+.device {
+  position: relative;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.device-iphone-14-pro {
+  width: 428px;
+  position: relative;
+}
+
+.device-screen {
+  background-color: #fff;
+  border-radius: 49px;
+}
+
+.device-frame {
+  background: #010101;
+  border: 1px solid #1b1721;
+  border-radius: 68px;
+  box-shadow: inset 0 0 4px 2px lighten(#342c3f, 55%), inset 0 0 0 6px #342c3f;
+  padding: 19px;
+  width: 428px;
+  z-index: 1;
+}
+
+.device-stripe::after,
+.device-stripe::before {
+  content: "";
+  border: solid rgba(#010101, 0.25);
+  border-width: 0 7px;
+  height: 7px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+
+.device-stripe::after {
+  top: 85px;
+}
+.device-stripe::before {
+  bottom: 85px;
+}
+
+.device-btns {
+  background: #1b1721;
+  border-radius: 2px;
+  height: 32px;
+  left: -2px;
+  position: absolute;
+  top: 115px;
+  width: 3px;
+}
+
+.device-btns::after,
+.device-btns::before {
+  background: #1b1721;
+  border-radius: 2px;
+  content: "";
+  height: 62px;
+  left: 0;
+  position: absolute;
+  width: 3px;
+}
+
+.device-btns::after {
+  top: 60px;
+}
+
+.device-btns::before {
+  top: 140px;
+}
+
+.device-power {
+  background: #1b1721;
+  border-radius: 2px;
+  height: 100px;
+  right: -2px;
+  position: absolute;
+  top: 200px;
+  width: 3px;
+}
+
+.device-silver .device-frame {
+  border-color: #c8cacb;
+  box-shadow: inset 0 0 4px 2px lighten(#e2e3e4, 55%), inset 0 0 0 6px #e2e3e4;
+}
+
+.device-silver .device-btns {
+  background: #c8cacb;
+}
+
+.device-silver .device-btns::after,
+.device-silver .device-btns::before {
+  background: #c8cacb;
+}
+
+.device-silver .device-power {
+  background: #c8cacb;
+}
+
+.container {
+  margin: 0 10rem;
+}
+
+.device-header-section {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats {
+  display: flex;
+}
+
+.device-header-cell {
+  background: #010101;
+  border-radius: 20px;
+  height: 40px;
+  width: 130px;
+  position: relative;
+}
+
+.device-header-cell::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  background: radial-gradient(
+      farthest-corner at 20% 20%,
+      #6074bf 0,
+      transparent 40%
+    ),
+    radial-gradient(
+      farthest-corner at 80% 80%,
+      #513785 0,
+      #24555e 20%,
+      transparent 50%
+    );
+  filter: blur(0.107828px);
+}
+
+.time {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #111111;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px 10px 10px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+}
+
+.profile-info {
+  display: flex;
+  gap: 0.6rem;
+  flex: 3;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 27px;
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-name {
+  font-weight: 500;
+  font-size: 20.1552px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.status {
+  font-weight: 400;
+  font-size: 13.4368px;
+  line-height: 16px;
+  letter-spacing: -0.002em;
+  color: #898989;
+}
+
+.device-body {
+  background-color: rgb(220, 193, 193);
+  height: 650px;
+  overflow-y: scroll;
+  padding: 0 10px;
+}
+
+.device-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 75px;
+}
+
+.chat-input {
+  display: flex;
+  background: rgba(239, 246, 252, 0.87);
+  border-radius: 25px;
+  padding: 20px;
+  gap: 10px;
+  align-items: center;
+}
+
+.chat-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+}
+
+.mic-input {
+  background: #25d366;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
